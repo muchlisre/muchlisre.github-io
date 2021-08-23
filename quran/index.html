@@ -18,11 +18,19 @@
       .arab {
         font-family: fontArab;
       }
+
+      #judul {
+        padding: 25px;
+        background: url(bg.png);
+        background-repeat: no-repeat;
+        background-width: 100%;
+        background-height: auto;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-    <h1>Al-Qur'an</h1>
+      <img class="mw-100" src="bg.png" />
       <div class="row" id="surah">
         <div class="col">
 
@@ -44,16 +52,19 @@
       var surat = search_params.get('surat');
       console.log(url_str);
       if (surat==undefined){
-        console.log(surat)
-        $.getJSON( "http://103.30.246.230:9090/surah", function( data ) {
+        console.log(surat);
+
+        $.getJSON( "https://mydaqu.daqu.xyz/quran/api/", function( data ) {
           var suratnya="";
           $.each( data.data, function( key, val ) {
-            suratnya += '<div class="col-sm-4" onclick="'+ url_str + '?surat=' + val.number+'">';
-            suratnya += '<div class="card mb-3"><div class="card-body">';
+            var linknya = url_str + "?surat=" + val.number;
+            suratnya += '<div class="col-sm-4" onclick="goto(`'+ linknya +'`)">';
+            suratnya += '<div class="card bg-light mb-3"><div class="card-body">';
             suratnya += '<h5 class="card-title arab">'+ val.name.long +'</h5>';
             suratnya += '<p class="card-text">'+ val.name.transliteration.id +'</p>';
             suratnya += '<p class="card-text">'+ val.name.translation.id +'</p>';
             suratnya += '</div></div></div>';
+            console.log(linknya);
             // suratnya += "<div class='col-sm-4 arab d-grid gap-2' onclick='surah("+val.number+")' id='" + val.number + "'><button class='btn btn-warning btn-lg'>" + val.name.short + "</button></div>";
           });
 
@@ -62,7 +73,7 @@
         });
       }else{
         console.log(surat)
-        $.getJSON( "http://103.30.246.230:9090/surah/"+surat, function( data ) {
+        $.getJSON( "https://mydaqu.daqu.xyz/quran/api/"+surat, function( data ) {
           var suratnya="";
           $.each( data.data.verses, function( key, val ) {
             suratnya += '<div class="col-12">';
@@ -77,6 +88,10 @@
           $("#surah").html(suratnya);
         });
       }
+    }
+
+    function goto(url){
+      window.location=url;
     }
     </script>
   </body>
