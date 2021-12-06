@@ -83,6 +83,23 @@ html,
         background-color: #2196F3;
         padding: 10px;
       }
+
+
+.bunga{
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+
+}
+.bunga-atas{
+position: fixed;
+top: 0;
+left: 0;
+width: 300px;
+
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .swiper {
@@ -119,6 +136,7 @@ html,
         font-weight: bold;
         color: #fff;
       }
+      
 
 }
 
