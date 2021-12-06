@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Outfit:wght@100;200;300;400;500;600&family=Style+Script&display=swap');
 html,
       body {
         position: relative;
@@ -36,45 +37,52 @@ html,
 
       
       .swiper-slide:nth-child(1n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(2n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(3n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(4n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(5n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(6n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(7n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(8n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(9n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
       .swiper-slide:nth-child(10n) {
-        background-color: rgb(218, 204, 204);
+        background-color: #DDBEA9;
       }
 
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+      }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .swiper {
@@ -193,4 +201,22 @@ html,
 .buka:active {
 	position:relative;
 	top:1px;
+}
+
+.nama1{
+  font-family: 'Carattere', cursive;
+  font-size: 28pt;
+  color: #6B705C;
+}
+
+.nama2{
+  font-family: 'Style Script', cursive;
+  font-size: 28pt;
+  color: #023047;
+}
+
+.kepada{
+  font-family: 'Outfit', sans-serif;
+  font-size: 15pt;
+  color: #013a63;
 }
