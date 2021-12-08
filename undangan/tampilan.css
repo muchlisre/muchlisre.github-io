@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Outfit:wght@100;200;300;400;500;600&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Carattere&family=Comforter+Brush&family=Outfit:wght@100;200;300;400;500;600&family=Sansita+Swashed:wght@300;500;700;800;900&display=swap');
 html,
       body {
         position: relative;
@@ -228,13 +228,22 @@ width: 300px;
 }
 
 .nama2{
-  font-family: 'Style Script', cursive;
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 600;
   font-size: 28pt;
-  color: #023047;
+  color: hsl(39, 100%, 14%);
 }
 
 .kepada{
   font-family: 'Outfit', sans-serif;
   font-size: 15pt;
-  color: #013a63;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.text-gradient {
+  background: rgb(255,199,2);
+  background: linear-gradient(180deg, rgba(255,199,2,0.8113620448179272) 0%, rgba(253,29,43,0.9262079831932774) 28%, rgba(252,176,69,0.8673844537815126) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
