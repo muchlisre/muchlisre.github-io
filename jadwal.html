@@ -387,7 +387,7 @@
     <script>
         // Ambil data jadwal sholat
         $.ajax({
-            url: 'http://api.aladhan.com/v1/timingsByCity/04-11-2024?city=Bekasi&country=Indonesia',
+            url: 'https://api.aladhan.com/v1/timingsByCity/04-11-2024?city=Bekasi&country=Indonesia',
             method: 'GET',
             dataType: 'json',
             success: function(response) {
@@ -430,7 +430,7 @@
         //asmaulhusna
         function getAsmaulHusna(number) {
             $.ajax({
-                url: `http://api.aladhan.com/v1/asmaAlHusna/${number}`,
+                url: `https://api.aladhan.com/v1/asmaAlHusna/${number}`,
                 method: 'GET',
                 dataType: 'json',
                 success: function(response) {
